@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Skip comercial
 // @author       Shukapin
-// @match        https://www.youtube.com
+// @match       https://www.youtube.com/*
 // @grant        none
 // ==/UserScript==
 
