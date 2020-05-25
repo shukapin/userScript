@@ -13,17 +13,20 @@
     setInterval(
         function () {
             try {
-                const adOverlayClose = document.getElementsByClassName("ytp-ad-overlay-close-container");
-                adOverlayClose[0].click();
+                var overrayAd = document.querySelector("div.ytp-ad-overlay-close-container > button");
+                overrayAd.click();
+                console.log('overray ad closed');
             } catch (e) {
                 ;
             }
             try {
-                const adSkipButton = document.getElementsByClassName("ytp-adSkipButton-container");
-                adSkipButton[0].click();
+                var skipButton = document.querySelector(".ytp-ad-skip-button");
+                skipButton.click();
+                console.log('skipable ad closed');
             } catch (e) {
                 ;
             }
-        }, 1000
+        }, 2000
     )
 })();
+
